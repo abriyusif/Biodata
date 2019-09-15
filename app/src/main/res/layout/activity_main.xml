@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="Abri Yusif "
             android:layout_marginBottom="15dp"
-            android:gravity="end"
+            android:gravity="start"
             android:layout_weight="1"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:text="JKUAT "
             android:layout_marginBottom="15dp"
-            android:gravity="end"
+            android:gravity="start"
             android:layout_weight="1"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:text="Kakuma "
             android:layout_marginBottom="15dp"
-            android:gravity="end"
+            android:gravity="start"
             android:layout_weight="1"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -93,7 +93,29 @@
             android:layout_height="wrap_content"
             android:text="0708599451 "
             android:layout_marginBottom="15dp"
-            android:gravity="end"
+            android:gravity="start"
+            android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:layout_marginBottom="15dp"
+            android:gravity="start"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juja"
+            android:layout_marginBottom="15dp"
+            android:gravity="start"
             android:layout_weight="1"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
