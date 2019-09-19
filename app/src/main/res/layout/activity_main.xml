@@ -1,134 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:layout_margin="20dp"
+    android:layout_margin="25dp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/nameSpace"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name: "
-            android:gravity="start"
-            android:layout_marginBottom="15dp"
-            android:layout_weight="1"/>
+        android:text="Name:"
+        android:layout_marginTop="135dp"/>
 
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Abri Yusif "
-            android:layout_marginBottom="15dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/myName"
+        android:layout_width="158dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Campus: "
-            android:layout_marginBottom="15dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
+        android:layout_alignParentRight="true"
+        android:text="Abri Yusif Samana"
+        android:layout_marginTop="135dp"/>
 
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="JKUAT "
-            android:layout_marginBottom="15dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/campusName"
+        android:layout_width="158dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:text="Camp Name: "
-            android:gravity="start"
-            android:layout_weight="1"/>
+        android:layout_below="@id/nameSpace"
+        android:layout_marginTop="20dp"
+        android:text="Campus:" />
 
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kakuma "
-            android:layout_marginBottom="15dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/jkuat"
+        android:layout_width="158dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Phone: "
-            android:layout_marginBottom="15dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
+        android:layout_below="@+id/myName"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="-1dp"
+        android:text="JKUAT" />
 
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0708599451 "
-            android:layout_marginBottom="15dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/campName"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Address: "
-            android:layout_marginBottom="15dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
+        android:layout_below="@+id/campusName"
+        android:layout_marginTop="20dp"
+        android:text="Camp Name:" />
 
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Juja"
-            android:layout_marginBottom="15dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:id="@+id/camp"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jkuat"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="Kakuma:" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="Phone" />
+
+    <TextView
+        android:id="@+id/phoneN"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="+254708599451" />
 
 
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Edit"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:textSize="40dp"/>
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
 
 
 
