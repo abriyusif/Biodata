@@ -78,6 +78,15 @@
         android:layout_marginTop="20dp"
         android:text="+254708599451" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Edit"
+        android:textSize="25dp"
+        />
 
 </RelativeLayout>
 
